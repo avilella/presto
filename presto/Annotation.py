@@ -33,7 +33,7 @@ def getCoordKey(header, coord_type=default_coord, delimiter=default_delimiter):
     elif coord_type == 'sra':
         return '.'.join(header.split()[0].split('.')[:2])
     elif coord_type == 'oldillumina':
-        return '.'.join(header.split('/')[0])
+        return header.split('/')[0]
     elif coord_type == 'presto':
         return parseAnnotation(header, delimiter=delimiter)['ID']
     else:
