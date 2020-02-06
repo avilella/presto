@@ -9,7 +9,7 @@ default_delimiter = ('|', '=', ',')
 default_separator = default_delimiter[2]
 
 # Commandline argument defaults
-choices_coord = ['illumina', 'solexa', 'sra', '454', 'presto', 'oldillumina']
+choices_coord = ['illumina', 'solexa', 'sra', '454', 'presto', 'oldillumina','r1']
 default_coord = 'presto'
 default_out_args = {'log_file':None,
                     'delimiter':default_delimiter,
