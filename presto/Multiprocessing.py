@@ -343,9 +343,11 @@ def feedPairQueue(alive, data_queue, seq_file_1, seq_file_2,
                                 delimiter=delimiter)
             key_2 = getCoordKey(seq_2.description, coord_type=coord_type,
                                 delimiter=delimiter)
-            if key_1 == key_2:
+            if key_1 == key_2 or coord_type == 'r1':
                 yield (key_1, [seq_1, seq_2])
             else:
+                import pdb; pdb.set_trace()
+                pass; # args.debug=False
                 raise Exception('Coordinates for sequences %s and %s do not match' \
                                  % (key_1, key_2))
 
