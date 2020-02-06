@@ -18,7 +18,7 @@ def getCoordKey(header, coord_type=default_coord, delimiter=default_delimiter):
     Arguments:
       header : Sequence header string
       coord_type : Sequence header format;
-                   one of ['illumina', 'solexa', 'sra', '454', 'presto'];
+                   one of ['illumina','oldillumina','r1', 'solexa', 'sra', '454', 'presto'];
                    if unrecognized type or None return sequence ID.
       delimiter : Tuple of delimiters for (fields, values, value lists)
 
